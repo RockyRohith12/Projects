@@ -371,8 +371,8 @@ This project is intended to use the MIT License. A `LICENSE` file must be added 
 
 **V Rohith**
 
-- GitHub: [Your GitHub Profile](https://github.com/RockyRohith12)
-- LinkedIn: [Your LinkedIn Profile](www.linkedin.com/in/v-rohith-90518535b)
+- GitHub: [My GitHub Profile](https://github.com/RockyRohith12)
+- LinkedIn: [My LinkedIn Profile](www.linkedin.com/in/v-rohith-90518535b)
 
 
 
