@@ -1,0 +1,842 @@
+[
+    {
+        "timestamp": "2026-11-04T21:45:00.401790",
+        "task_id": 1,
+        "task": {
+            "value": 10,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.401790",
+        "task_id": 2,
+        "task": {
+            "value": 5,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.401790",
+        "task_id": 3,
+        "task": {
+            "value": 20,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.401790",
+        "task_id": 4,
+        "task": {
+            "value": 12,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.401790",
+        "task_id": 5,
+        "task": {
+            "value": 25,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.401790",
+        "task_id": 6,
+        "task": {
+            "value": 8,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 7,
+        "task": {
+            "value": 15,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 8,
+        "task": {
+            "value": 30,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.0,
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 1,
+        "task": {
+            "value": 10,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 2,
+        "task": {
+            "value": 5,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 2.7962,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": true
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 3,
+        "task": {
+            "value": 20,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 4,
+        "task": {
+            "value": 12,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.403040",
+        "task_id": 5,
+        "task": {
+            "value": 25,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 49.6039,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": true
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 6,
+        "task": {
+            "value": 8,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 7,
+        "task": {
+            "value": 15,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 8,
+        "task": {
+            "value": 30,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.05,
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 1,
+        "task": {
+            "value": 10,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 2,
+        "task": {
+            "value": 5,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 3,
+        "task": {
+            "value": 20,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 4,
+        "task": {
+            "value": 12,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": true
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 5,
+        "task": {
+            "value": 25,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 6,
+        "task": {
+            "value": 8,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 7,
+        "task": {
+            "value": 15,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 8,
+        "task": {
+            "value": 30,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.1,
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 1,
+        "task": {
+            "value": 10,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.404049",
+        "task_id": 2,
+        "task": {
+            "value": 5,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 3,
+        "task": {
+            "value": 20,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": true
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 4,
+        "task": {
+            "value": 12,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": true
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 5,
+        "task": {
+            "value": 25,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 6,
+        "task": {
+            "value": 8,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 7,
+        "task": {
+            "value": 15,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 8,
+        "task": {
+            "value": 30,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.2,
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 1,
+        "task": {
+            "value": 10,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 2,
+        "task": {
+            "value": 5,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 3,
+        "task": {
+            "value": 20,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": true
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 4,
+        "task": {
+            "value": 12,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 5,
+        "task": {
+            "value": 25,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "observed_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 6,
+        "task": {
+            "value": 8,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "observed_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 7,
+        "task": {
+            "value": 15,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "observed_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "fault_injected": false
+    },
+    {
+        "timestamp": "2026-11-04T21:45:00.405150",
+        "task_id": 8,
+        "task": {
+            "value": 30,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_rate": 0.4,
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "observed_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "fault_injected": false
+    }
+]

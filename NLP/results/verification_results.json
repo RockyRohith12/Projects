@@ -1,0 +1,3122 @@
+[
+    {
+        "task_id": 1,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.0,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.0,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.0,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.05,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.05,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.05,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": true,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.1,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.1,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.4739,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.4739,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.1,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.4739,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": true,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.4739,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.2,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.2,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 2.7962,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 2.7962,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.2,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 43.4523,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 43.4523,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 19.8416,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": true,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.8416,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 49.6039,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": true,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 49.6039,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.4,
+        "policy": "never_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.1235,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.1235,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.4,
+        "policy": "always_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 43.4523,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 43.4523,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 1,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 22.0462,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 2,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 3.1069,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 2.7962,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 2.7962,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 3,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 9.0719,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 8.1647,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 4,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 19.3121,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 17.3809,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 5,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 55.1155,
+            "from_unit": "kg",
+            "to_unit": "lb"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 6,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "initial_fault": false,
+        "verification_triggered": false,
+        "verifier_flag": null,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 4.971,
+            "from_unit": "km",
+            "to_unit": "miles"
+        },
+        "final_correct": true
+    },
+    {
+        "task_id": 7,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 6.8039,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_output": {
+            "value": 6.1235,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 6.1235,
+            "from_unit": "lb",
+            "to_unit": "kg"
+        },
+        "final_correct": false
+    },
+    {
+        "task_id": 8,
+        "fault_rate": 0.4,
+        "policy": "selective_verify",
+        "ground_truth": {
+            "value": 48.2803,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_output": {
+            "value": 43.4523,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "initial_fault": true,
+        "verification_triggered": true,
+        "verifier_flag": false,
+        "retry_used": false,
+        "retry_fault": null,
+        "final_output": {
+            "value": 43.4523,
+            "from_unit": "miles",
+            "to_unit": "km"
+        },
+        "final_correct": false
+    }
+]
