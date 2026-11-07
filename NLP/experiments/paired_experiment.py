@@ -84,20 +84,26 @@ def is_correct(output, truth):
         return False
 
 
-def evaluate_case(row, policy):
-    task, observed, truth = row["task"], row["initial_output"], row["ground_truth"]
+def policy_decision(task, observed, policy):
+    """Policy boundary: deliberately accepts no labels or ground truth."""
     if policy == "never_verify":
-        checked, flagged, error = False, False, None
-    else:
-        checked = policy == "always_verify" or structural_gate(task, observed)
-        flagged, error = False, None
-        if checked:
-            try:
-                flagged = ask_verifier(task, observed)
-            except VerifierError as exc:
-                error = str(exc)
-                flagged = False  # fail closed: no retry on verifier error
+        return False, False, None
+    checked = policy == "always_verify" or structural_gate(task, observed)
+    if not checked:
+        return False, False, None
+    try:
+        return True, ask_verifier(task, observed), None
+    except VerifierError as exc:
+        return True, False, str(exc)  # fail closed on verifier errors
 
+
+def evaluate_case(row, policy):
+    # Decision stage sees only public task and observed tool result.
+    task, observed = row["task"], row["initial_output"]
+    checked, flagged, error = policy_decision(task, observed, policy)
+
+    # Outcome stage alone accesses hidden labels and pre-generated retry.
+    truth = row["ground_truth"]
     retry_used = bool(checked and flagged)
     final_output = row["retry_output"] if retry_used else observed
     initial_correct = is_correct(observed, truth)
