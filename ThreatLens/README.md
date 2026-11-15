@@ -232,25 +232,7 @@ flowchart TD
 
 | Technology | Purpose |
 |---|---|
-| React | Frontend user interface |
-| TypeScript | Type-safe frontend development |
-| Vite | Frontend development and build tooling |
-| Tailwind CSS v4 | Styling and responsive UI |
-| Node.js | Backend JavaScript runtime |
-| Express.js | REST API framework |
-| MongoDB Atlas | Cloud NoSQL database |
-| Mongoose | MongoDB object modeling |
-| bcryptjs | Password hashing |
-| dotenv | Environment variable management |
-| Helmet | HTTP security headers |
-| CORS | Cross-origin resource sharing |
-| express-rate-limit | API rate limiting |
-| Google Gemini API | Planned AI-assisted investigation |
-| AbuseIPDB | Planned IP address reputation enrichment |
-| URLhaus | Planned malicious URL intelligence |
-| JWT | Planned authentication |
-| Jest + Supertest | Planned backend testing |
-| Git & GitHub | Version control and project collaboration |
+ 
 
 Additional libraries and integrations will be documented when selected and integrated.
 
