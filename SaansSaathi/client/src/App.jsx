@@ -1,122 +1,136 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+
+import './App.css';
+
+import { useCallback, useEffect, useState } from 'react';
+
+import { fetchAirQuality } from './services/airQualityApi';
+import { generateRecommendations } from './services/recommendationService';
+
+import LocationHeader from './components/LocationHeader';
+import AQIOverview from './components/AQIOverview';
+import PollutantCards from './components/PollutantCards';
+import LoadingState from './components/LoadingState';
+import HealthAdvisory from './components/HealthAdvisory';
+import LifestyleProfile from './components/LifestyleProfile';
+import Recommendations from './components/Recommendations';
+
+const LOCATION = {
+  name: 'Bengaluru, India',
+  latitude: 12.9716,
+  longitude: 77.5946,
+};
 
 function App() {
-  const [count, setCount] = useState(0)
+  // API states
+  const [airQuality, setAirQuality] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+
+  // Personalization states
+  const [recommendations, setRecommendations] = useState([]);
+  const [profileSubmitted, setProfileSubmitted] = useState(false);
+
+  // Fetch air quality
+  const loadAirQuality = useCallback(async () => {
+    setLoading(true);
+    setError('');
+
+    try {
+      const result = await fetchAirQuality(
+        LOCATION.latitude,
+        LOCATION.longitude
+      );
+
+      setAirQuality(result.data);
+
+      // Previous recommendations must be regenerated
+      // against the new AQI after a refresh.
+      setRecommendations([]);
+      setProfileSubmitted(false);
+    } catch (err) {
+      setError(err.message || 'Something went wrong');
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    loadAirQuality();
+  }, [loadAirQuality]);
+
+  // Current air quality data
+  const currentData = airQuality?.current;
+
+  const updatedAt = currentData?.time
+    ? new Date(currentData.time).toLocaleString('en-IN')
+    : '';
+
+  // Generate personalized recommendations
+  const handleProfileSubmit = (profile) => {
+    if (!currentData || !Number.isFinite(currentData.us_aqi)) {
+      return;
+    }
+
+    const results = generateRecommendations(
+      currentData.us_aqi,
+      profile
+    );
+
+    setRecommendations(results);
+    setProfileSubmitted(true);
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <main className="dashboard">
+      <div className="dashboard-container">
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <div className="brand-header">
+          <h1>SaansSaathi</h1>
+          <p>Breathe Smarter. Live Safer.</p>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        <LocationHeader
+          location={LOCATION.name}
+          onRefresh={loadAirQuality}
+          loading={loading}
+        />
+
+        <LoadingState
+          loading={loading}
+          error={error}
+          onRetry={loadAirQuality}
+        />
+
+        {!loading && !error && currentData && (
+          <>
+            <AQIOverview
+              aqi={currentData.us_aqi}
+              updatedAt={updatedAt}
+            />
+
+            <HealthAdvisory
+              aqi={currentData.us_aqi}
+            />
+
+            <PollutantCards
+              data={currentData}
+            />
+
+            <LifestyleProfile
+              onSubmit={handleProfileSubmit}
+            />
+
+            {profileSubmitted && (
+              <Recommendations
+                recommendations={recommendations}
+              />
+            )}
+          </>
+        )}
+
+      </div>
+    </main>
+  );
 }
 
-export default App
+export default App;
