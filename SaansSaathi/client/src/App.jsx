@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { fetchAirQuality } from './services/airQualityApi';
 import { generateRecommendations } from './services/recommendationService';
+import { getCurrentLocation } from './services/locationService';
 
 import LocationHeader from './components/LocationHeader';
 import AQIOverview from './components/AQIOverview';
@@ -14,49 +15,100 @@ import HealthAdvisory from './components/HealthAdvisory';
 import LifestyleProfile from './components/LifestyleProfile';
 import Recommendations from './components/Recommendations';
 
-const LOCATION = {
-  name: 'Bengaluru, India',
-  latitude: 12.9716,
-  longitude: 77.5946,
-};
-
 function App() {
-  // API states
+  // Air quality states
   const [airQuality, setAirQuality] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  // Location states
+  const [location, setLocation] = useState({
+    name: 'Detecting your location...',
+    latitude: null,
+    longitude: null,
+  });
+
+  const [locationLoading, setLocationLoading] = useState(true);
 
   // Personalization states
   const [recommendations, setRecommendations] = useState([]);
   const [profileSubmitted, setProfileSubmitted] = useState(false);
 
-  // Fetch air quality
+  // Detect user's current location
+  useEffect(() => {
+    let isMounted = true;
+
+    const detectLocation = async () => {
+      try {
+        setLocationLoading(true);
+        setError('');
+
+        const coordinates = await getCurrentLocation();
+
+        if (!isMounted) return;
+
+        setLocation({
+          name: 'Your Current Location',
+          latitude: coordinates.latitude,
+          longitude: coordinates.longitude,
+        });
+      } catch (err) {
+        if (!isMounted) return;
+
+        setError(err.message || 'Unable to detect your location.');
+      } finally {
+        if (isMounted) {
+          setLocationLoading(false);
+        }
+      }
+    };
+
+    detectLocation();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  // Fetch air quality using detected coordinates
   const loadAirQuality = useCallback(async () => {
+    if (
+      location.latitude === null ||
+      location.longitude === null
+    ) {
+      return;
+    }
+
     setLoading(true);
     setError('');
 
     try {
       const result = await fetchAirQuality(
-        LOCATION.latitude,
-        LOCATION.longitude
+        location.latitude,
+        location.longitude
       );
 
       setAirQuality(result.data);
 
-      // Previous recommendations must be regenerated
-      // against the new AQI after a refresh.
+      // Reset recommendations when AQI is refreshed
       setRecommendations([]);
       setProfileSubmitted(false);
     } catch (err) {
-      setError(err.message || 'Something went wrong');
+      setError(err.message || 'Unable to retrieve air quality data.');
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [location.latitude, location.longitude]);
 
+  // Automatically fetch AQI after location detection
   useEffect(() => {
-    loadAirQuality();
-  }, [loadAirQuality]);
+    if (
+      location.latitude !== null &&
+      location.longitude !== null
+    ) {
+      loadAirQuality();
+    }
+  }, [location.latitude, location.longitude, loadAirQuality]);
 
   // Current air quality data
   const currentData = airQuality?.current;
@@ -90,18 +142,22 @@ function App() {
         </div>
 
         <LocationHeader
-          location={LOCATION.name}
+          location={location.name}
           onRefresh={loadAirQuality}
-          loading={loading}
+          loading={loading || locationLoading}
         />
 
         <LoadingState
-          loading={loading}
+          loading={locationLoading || loading}
           error={error}
-          onRetry={loadAirQuality}
+          onRetry={() => {
+            if (location.latitude !== null) {
+              loadAirQuality();
+            }
+          }}
         />
 
-        {!loading && !error && currentData && (
+        {!locationLoading && !loading && !error && currentData && (
           <>
             <AQIOverview
               aqi={currentData.us_aqi}
