@@ -4,30 +4,27 @@ const GEOCODING_API =
 
 export const getLocationName = async (latitude, longitude) => {
   const params = new URLSearchParams({
+    format: 'jsonv2',
     lat: String(latitude),
     lon: String(longitude),
-    format: 'jsonv2',
     zoom: '10',
     addressdetails: '1',
   });
 
   const response = await fetch(
-    `${GEOCODING_API}?${params}`,
-    {
-      headers: {
-        'Accept': 'application/json',
-        'User-Agent': 'SaansSaathi/1.0',
-      },
-      signal: AbortSignal.timeout(10000),
-    }
+    `${GEOCODING_API}?${params}`
   );
 
   if (!response.ok) {
-    throw new Error('Unable to identify your location');
+    throw new Error('Unable to retrieve location name.');
   }
 
   const result = await response.json();
-  const address = result.address || {};
+  const address = result.address;
+
+  if (!address) {
+    throw new Error('Location details were not found.');
+  }
 
   const city =
     address.city ||
@@ -37,14 +34,9 @@ export const getLocationName = async (latitude, longitude) => {
     address.county;
 
   const state = address.state;
+  const country = address.country;
 
-  if (!city && !state) {
-    throw new Error('Location name not available');
-  }
-
-  return {
-    city: city || '',
-    state: state || '',
-    country: address.country || '',
-  };
+  return [city, state, country]
+    .filter(Boolean)
+    .join(', ');
 };

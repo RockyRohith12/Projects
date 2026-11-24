@@ -8,7 +8,7 @@ function getAQICategory(aqi) {
   return { label: 'Hazardous', color: '#7f1d1d' };
 }
 
-function AQIOverview({ aqi, updatedAt }) {
+function AQIOverview({ aqi, readingTime, fetchedTime }) {
   const category = getAQICategory(aqi);
 
   return (
@@ -22,6 +22,7 @@ function AQIOverview({ aqi, updatedAt }) {
         <h1 style={{ color: category.color }}>
           {Math.round(aqi)}
         </h1>
+
         <div>
           <h2>US AQI</h2>
           <p style={{ color: category.color }}>
@@ -30,9 +31,10 @@ function AQIOverview({ aqi, updatedAt }) {
         </div>
       </div>
 
-      <p className="aqi-updated">
-        Last updated: {updatedAt}
-      </p>
+      <div className="aqi-timestamps">
+        <p>Reading time: {readingTime}</p>
+        <p>Last fetched: {fetchedTime}</p>
+      </div>
     </section>
   );
 }

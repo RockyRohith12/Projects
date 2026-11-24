@@ -6,6 +6,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { fetchAirQuality } from './services/airQualityApi';
 import { generateRecommendations } from './services/recommendationService';
 import { getCurrentLocation } from './services/locationService';
+import { getLocationName } from './services/geocodingService';
 
 import LocationHeader from './components/LocationHeader';
 import AQIOverview from './components/AQIOverview';
@@ -20,6 +21,7 @@ function App() {
   const [airQuality, setAirQuality] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [lastFetched, setLastFetched] = useState(null);
 
   // Location states
   const [location, setLocation] = useState({
@@ -34,7 +36,7 @@ function App() {
   const [recommendations, setRecommendations] = useState([]);
   const [profileSubmitted, setProfileSubmitted] = useState(false);
 
-  // Detect user's current location
+  // Detect current location and resolve its city name
   useEffect(() => {
     let isMounted = true;
 
@@ -47,15 +49,45 @@ function App() {
 
         if (!isMounted) return;
 
+        // Store coordinates immediately
         setLocation({
-          name: 'Your Current Location',
+          name: 'Resolving your location...',
           latitude: coordinates.latitude,
           longitude: coordinates.longitude,
         });
+
+        // Resolve coordinates into a readable address
+        try {
+          const locationName = await getLocationName(
+            coordinates.latitude,
+            coordinates.longitude
+          );
+
+          if (!isMounted) return;
+
+          setLocation((previous) => ({
+            ...previous,
+            name: locationName,
+          }));
+        } catch (geocodingError) {
+          console.error(
+            'Geocoding error:',
+            geocodingError.message
+          );
+
+          if (isMounted) {
+            setLocation((previous) => ({
+              ...previous,
+              name: 'Your Current Location',
+            }));
+          }
+        }
       } catch (err) {
         if (!isMounted) return;
 
-        setError(err.message || 'Unable to detect your location.');
+        setError(
+          err.message || 'Unable to detect your location.'
+        );
       } finally {
         if (isMounted) {
           setLocationLoading(false);
@@ -89,12 +121,15 @@ function App() {
       );
 
       setAirQuality(result.data);
+      setLastFetched(new Date());
 
       // Reset recommendations when AQI is refreshed
       setRecommendations([]);
       setProfileSubmitted(false);
     } catch (err) {
-      setError(err.message || 'Unable to retrieve air quality data.');
+      setError(
+        err.message || 'Unable to retrieve air quality data.'
+      );
     } finally {
       setLoading(false);
     }
@@ -113,13 +148,21 @@ function App() {
   // Current air quality data
   const currentData = airQuality?.current;
 
-  const updatedAt = currentData?.time
-    ? new Date(currentData.time).toLocaleString('en-IN')
-    : '';
+  // Timestamp of the air-quality model reading
+const readingTime = currentData?.time
+  ? new Date(currentData.time).toLocaleString('en-IN')
+  : 'Unavailable';
+
+const fetchedTime = lastFetched
+  ? lastFetched.toLocaleString('en-IN')
+  : 'Unavailable';
 
   // Generate personalized recommendations
   const handleProfileSubmit = (profile) => {
-    if (!currentData || !Number.isFinite(currentData.us_aqi)) {
+    if (
+      !currentData ||
+      !Number.isFinite(currentData.us_aqi)
+    ) {
       return;
     }
 
@@ -161,7 +204,8 @@ function App() {
           <>
             <AQIOverview
               aqi={currentData.us_aqi}
-              updatedAt={updatedAt}
+              readingTime={readingTime}
+              fetchedTime={fetchedTime}
             />
 
             <HealthAdvisory
