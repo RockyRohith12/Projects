@@ -4,12 +4,14 @@ import './App.css';
 import { useCallback, useEffect, useState } from 'react';
 
 import { fetchAirQuality } from './services/airQualityApi';
+import { fetchAirQualityForecast } from './services/forecastApi';
 import { generateRecommendations } from './services/recommendationService';
 import { getCurrentLocation } from './services/locationService';
 import { getLocationName } from './services/geocodingService';
 
 import LocationHeader from './components/LocationHeader';
 import AQIOverview from './components/AQIOverview';
+import AQIForecast from './components/AQIForecast';
 import PollutantCards from './components/PollutantCards';
 import LoadingState from './components/LoadingState';
 import HealthAdvisory from './components/HealthAdvisory';
@@ -18,13 +20,27 @@ import Recommendations from './components/Recommendations';
 import AIChat from './components/AIChat';
 
 function App() {
-  // Air quality states
+  // ==========================================
+  // 1. AIR QUALITY STATES
+  // ==========================================
+
   const [airQuality, setAirQuality] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [lastFetched, setLastFetched] = useState(null);
 
-  // Location states
+  // ==========================================
+  // 2. AQI FORECAST STATES
+  // ==========================================
+
+  const [forecast, setForecast] = useState(null);
+  const [forecastLoading, setForecastLoading] = useState(false);
+  const [forecastError, setForecastError] = useState('');
+
+  // ==========================================
+  // 3. LOCATION STATES
+  // ==========================================
+
   const [location, setLocation] = useState({
     name: 'Detecting your location...',
     latitude: null,
@@ -33,11 +49,17 @@ function App() {
 
   const [locationLoading, setLocationLoading] = useState(true);
 
-  // Personalization states
+  // ==========================================
+  // 4. PERSONALIZATION STATES
+  // ==========================================
+
   const [recommendations, setRecommendations] = useState([]);
   const [profileSubmitted, setProfileSubmitted] = useState(false);
 
-  // Detect current location and resolve its city name
+  // ==========================================
+  // 5. DETECT CURRENT LOCATION
+  // ==========================================
+
   useEffect(() => {
     let isMounted = true;
 
@@ -103,7 +125,10 @@ function App() {
     };
   }, []);
 
-  // Fetch air quality using detected coordinates
+  // ==========================================
+  // 6. FETCH CURRENT AIR QUALITY
+  // ==========================================
+
   const loadAirQuality = useCallback(async () => {
     if (
       location.latitude === null ||
@@ -127,6 +152,7 @@ function App() {
       // Reset recommendations when AQI is refreshed
       setRecommendations([]);
       setProfileSubmitted(false);
+
     } catch (err) {
       setError(
         err.message || 'Unable to retrieve air quality data.'
@@ -136,7 +162,58 @@ function App() {
     }
   }, [location.latitude, location.longitude]);
 
-  // Automatically fetch AQI after location detection
+  // ==========================================
+  // 7. FETCH 24-HOUR AQI FORECAST
+  // ==========================================
+
+  useEffect(() => {
+    if (
+      location.latitude === null ||
+      location.longitude === null
+    ) {
+      return;
+    }
+
+    let isMounted = true;
+
+    const loadForecast = async () => {
+      setForecastLoading(true);
+      setForecastError('');
+
+      try {
+        const result = await fetchAirQualityForecast(
+          location.latitude,
+          location.longitude
+        );
+
+        if (isMounted) {
+          setForecast(result);
+        }
+
+      } catch (err) {
+        if (isMounted) {
+          setForecastError(
+            err.message || 'Unable to load AQI forecast.'
+          );
+        }
+      } finally {
+        if (isMounted) {
+          setForecastLoading(false);
+        }
+      }
+    };
+
+    loadForecast();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [location.latitude, location.longitude]);
+
+  // ==========================================
+  // 8. AUTOMATICALLY FETCH AQI AFTER LOCATION
+  // ==========================================
+
   useEffect(() => {
     if (
       location.latitude !== null &&
@@ -144,21 +221,32 @@ function App() {
     ) {
       loadAirQuality();
     }
-  }, [location.latitude, location.longitude, loadAirQuality]);
+  }, [
+    location.latitude,
+    location.longitude,
+    loadAirQuality,
+  ]);
 
-  // Current air quality data
+  // ==========================================
+  // 9. CURRENT AIR QUALITY DATA
+  // ==========================================
+
   const currentData = airQuality?.current;
 
   // Timestamp of the air-quality model reading
-const readingTime = currentData?.time
-  ? new Date(currentData.time).toLocaleString('en-IN')
-  : 'Unavailable';
+  const readingTime = currentData?.time
+    ? new Date(currentData.time).toLocaleString('en-IN')
+    : 'Unavailable';
 
-const fetchedTime = lastFetched
-  ? lastFetched.toLocaleString('en-IN')
-  : 'Unavailable';
+  // Timestamp when our application fetched the data
+  const fetchedTime = lastFetched
+    ? lastFetched.toLocaleString('en-IN')
+    : 'Unavailable';
 
-  // Generate personalized recommendations
+  // ==========================================
+  // 10. GENERATE PERSONALIZED RECOMMENDATIONS
+  // ==========================================
+
   const handleProfileSubmit = (profile) => {
     if (
       !currentData ||
@@ -167,78 +255,104 @@ const fetchedTime = lastFetched
       return;
     }
 
-const results = generateRecommendations(
-  currentData.us_aqi,
-  profile,
-  airQuality?.weather?.current,
-  airQuality?.pollutantAqi
-);
+    const results = generateRecommendations(
+      currentData.us_aqi,
+      profile,
+      airQuality?.weather?.current,
+      airQuality?.pollutantAqi
+    );
 
     setRecommendations(results);
     setProfileSubmitted(true);
   };
 
+  // ==========================================
+  // 11. DASHBOARD UI
+  // ==========================================
+
   return (
     <main className="dashboard">
       <div className="dashboard-container">
 
+        {/* Brand Header */}
         <div className="brand-header">
           <h1>SaansSaathi</h1>
           <p>Breathe Smarter. Live Safer.</p>
         </div>
 
+        {/* Location Header */}
         <LocationHeader
           location={location.name}
           onRefresh={loadAirQuality}
           loading={loading || locationLoading}
         />
 
+        {/* Loading and Error State */}
         <LoadingState
           loading={locationLoading || loading}
           error={error}
           onRetry={() => {
-            if (location.latitude !== null) {
+            if (
+              location.latitude !== null &&
+              location.longitude !== null
+            ) {
               loadAirQuality();
             }
           }}
         />
 
+        {/* Dashboard Content */}
         {!locationLoading && !loading && !error && currentData && (
           <>
+
+            {/* Current AQI Overview */}
             <AQIOverview
               aqi={currentData.us_aqi}
               readingTime={readingTime}
               fetchedTime={fetchedTime}
             />
 
+            {/* 24-Hour AQI Forecast */}
+            <AQIForecast
+              forecast={forecast}
+              loading={forecastLoading}
+              error={forecastError}
+            />
+
+            {/* Health Advisory */}
             <HealthAdvisory
               aqi={currentData.us_aqi}
             />
 
+            {/* Pollutant Information */}
             <PollutantCards
               data={currentData}
             />
 
+            {/* Lifestyle Profile */}
             <LifestyleProfile
               onSubmit={handleProfileSubmit}
             />
 
+            {/* Personalized Recommendations */}
             {profileSubmitted && (
               <Recommendations
                 recommendations={recommendations}
               />
             )}
+
+            {/* AI Environmental Assistant */}
             <AIChat
-  environmentalContext={{
-    location: location.name,
+              environmentalContext={{
+                location: location.name,
+                latitude: location.latitude,
+                longitude: location.longitude,
+                airQuality: currentData,
+                weather: airQuality?.weather?.current || null,
+                readingTime: readingTime,
+              }}
+            />
 
-    airQuality: currentData,
-
-    weather: airQuality?.weather?.current || null,
-
-    readingTime: readingTime,
-  }}
-/>
           </>
         )}
 

@@ -1,5 +1,6 @@
 
 import { generateGroqResponse } from '../services/groqService.js';
+
 import {
   getConversation,
   saveMessage,
@@ -43,11 +44,14 @@ const validateEnvironmentalContext = (context) => {
 
   const {
     location,
+    latitude,
+    longitude,
     airQuality,
     weather,
     readingTime,
   } = context;
 
+  // Validate location name
   if (
     typeof location !== 'string' ||
     location.length > 200
@@ -55,6 +59,27 @@ const validateEnvironmentalContext = (context) => {
     throw new Error('Invalid location information.');
   }
 
+  // Validate latitude
+  if (
+    typeof latitude !== 'number' ||
+    !Number.isFinite(latitude) ||
+    latitude < -90 ||
+    latitude > 90
+  ) {
+    throw new Error('Invalid latitude.');
+  }
+
+  // Validate longitude
+  if (
+    typeof longitude !== 'number' ||
+    !Number.isFinite(longitude) ||
+    longitude < -180 ||
+    longitude > 180
+  ) {
+    throw new Error('Invalid longitude.');
+  }
+
+  // Validate air-quality information
   if (
     !airQuality ||
     typeof airQuality !== 'object' ||
@@ -63,7 +88,6 @@ const validateEnvironmentalContext = (context) => {
     throw new Error('Invalid air-quality information.');
   }
 
-  // Validate air-quality values
   const safeAirQuality = {};
 
   for (const field of ALLOWED_AQI_FIELDS) {
@@ -81,7 +105,7 @@ const validateEnvironmentalContext = (context) => {
     }
   }
 
-  // Validate weather values
+  // Validate weather information
   let safeWeather = null;
 
   if (weather !== undefined && weather !== null) {
@@ -110,8 +134,11 @@ const validateEnvironmentalContext = (context) => {
     }
   }
 
+  // Return only validated environmental information
   return {
     location,
+    latitude,
+    longitude,
     airQuality: safeAirQuality,
     weather: safeWeather,
     readingTime:
@@ -131,6 +158,7 @@ export const chatWithAssistant = async (req, res) => {
       environmentalContext,
     } = req.body;
 
+    // Validate user message
     if (
       typeof message !== 'string' ||
       !message.trim() ||
@@ -138,10 +166,12 @@ export const chatWithAssistant = async (req, res) => {
     ) {
       return res.status(400).json({
         success: false,
-        message: 'Please provide a valid message (maximum 4000 characters).',
+        message:
+          'Please provide a valid message (maximum 4000 characters).',
       });
     }
 
+    // Validate conversation ID
     if (
       conversationId !== undefined &&
       (
@@ -155,6 +185,7 @@ export const chatWithAssistant = async (req, res) => {
       });
     }
 
+    // Validate environmental context
     let safeContext;
 
     try {
@@ -167,6 +198,7 @@ export const chatWithAssistant = async (req, res) => {
       });
     }
 
+    // Retrieve conversation
     const conversation = getConversation(conversationId);
 
     if (!conversation) {
@@ -176,6 +208,7 @@ export const chatWithAssistant = async (req, res) => {
       });
     }
 
+    // Prepare conversation history
     const messages = [
       ...conversation.messages,
       {
@@ -188,11 +221,13 @@ export const chatWithAssistant = async (req, res) => {
       '[AI] Sending conversation and environmental context to Groq...'
     );
 
+    // Generate AI response with validated coordinates
     const reply = await generateGroqResponse(
       messages,
       safeContext
     );
 
+    // Save conversation only after successful AI response
     saveMessage(
       conversation.conversationId,
       'user',
@@ -214,11 +249,15 @@ export const chatWithAssistant = async (req, res) => {
     });
 
   } catch (error) {
-    console.error('[AI] Groq request failed:', error.message);
+    console.error(
+      '[AI] Groq request failed:',
+      error.message
+    );
 
     return res.status(502).json({
       success: false,
-      message: 'The AI assistant is temporarily unavailable. Please try again.',
+      message:
+        'The AI assistant is temporarily unavailable. Please try again.',
     });
   }
 };

@@ -1,6 +1,6 @@
 
 const OVERPASS_API =
-  'https://overpass-api.de/api/interpreter';
+  'https://ovp.dresel.systems/api-as/interpreter';
 
 export const findNearbyHospitals = async (
   latitude,
@@ -22,20 +22,19 @@ export const findNearbyHospitals = async (
     throw new Error('Invalid search radius.');
   }
 
+
   const query = `
-    [out:json][timeout:20];
+    [out:json][timeout:25];
     (
-      node["amenity"~"^(hospital|clinic)$"]
+      nwr["amenity"~"^(hospital|clinic)$"]
         (around:${radius},${latitude},${longitude});
 
-      way["amenity"~"^(hospital|clinic)$"]
-        (around:${radius},${latitude},${longitude});
-
-      relation["amenity"~"^(hospital|clinic)$"]
+      nwr["healthcare"~"^(hospital|clinic)$"]
         (around:${radius},${latitude},${longitude});
     );
     out center tags;
   `;
+
 
   const response = await fetch(OVERPASS_API, {
     method: 'POST',
@@ -69,7 +68,7 @@ export const findNearbyHospitals = async (
     return {
       id: `${place.type}-${place.id}`,
       name: tags.name || 'Unnamed healthcare facility',
-      type: tags.amenity || 'healthcare facility',
+      type: tags.healthcare || tags.amenity || 'healthcare facility',
       latitude: coordinates.lat,
       longitude: coordinates.lon,
       address: [
