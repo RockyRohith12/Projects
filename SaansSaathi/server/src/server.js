@@ -27,7 +27,7 @@ app.use(helmet());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
   })
 );
 
@@ -97,6 +97,6 @@ app.use((err, req, res, next) => {
 // 8. START SERVER
 // ==========================================
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`SaansSaathi server running on port ${PORT}`);
 });
