@@ -15,6 +15,7 @@ import LoadingState from './components/LoadingState';
 import HealthAdvisory from './components/HealthAdvisory';
 import LifestyleProfile from './components/LifestyleProfile';
 import Recommendations from './components/Recommendations';
+import AIChat from './components/AIChat';
 
 function App() {
   // Air quality states
@@ -166,10 +167,12 @@ const fetchedTime = lastFetched
       return;
     }
 
-    const results = generateRecommendations(
-      currentData.us_aqi,
-      profile
-    );
+const results = generateRecommendations(
+  currentData.us_aqi,
+  profile,
+  airQuality?.weather?.current,
+  airQuality?.pollutantAqi
+);
 
     setRecommendations(results);
     setProfileSubmitted(true);
@@ -225,6 +228,17 @@ const fetchedTime = lastFetched
                 recommendations={recommendations}
               />
             )}
+            <AIChat
+  environmentalContext={{
+    location: location.name,
+
+    airQuality: currentData,
+
+    weather: airQuality?.weather?.current || null,
+
+    readingTime: readingTime,
+  }}
+/>
           </>
         )}
 

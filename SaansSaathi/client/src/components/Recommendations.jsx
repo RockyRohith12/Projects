@@ -40,12 +40,33 @@ function Recommendations({ recommendations }) {
               </span>
 
               <span className={`priority priority-${item.priority}`}>
-                {item.priority === 'high' ? 'High priority' : 'Suggested'}
+                {item.priority === 'high'
+  ? 'High priority'
+  : item.priority === 'medium'
+    ? 'Medium priority'
+    : 'Low priority'}
               </span>
             </div>
 
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+
+            {item.evidence && (
+  <div className="recommendation-evidence">
+    <div className="evidence-heading">
+      <span>Why this recommendation?</span>
+      <span className="evidence-value">
+        {item.evidence.pollutant}: {item.evidence.value}
+      </span>
+    </div>
+
+    <p>{item.evidence.explanation}</p>
+
+    <span className="evidence-timestamp">
+      Individual US AQI · {item.evidence.timestamp || 'Time unavailable'}
+    </span>
+  </div>
+)}
 
             <div className="recommendation-footer">
               {item.priority === 'high' ? (
